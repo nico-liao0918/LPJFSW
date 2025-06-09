@@ -7,14 +7,6 @@
             name="viewport" 
             content="width=device-width, initial-scale=1.0"
         />
-        <meta 
-            name="description" 
-            content="James Freelance Services offers expert web development, content writing, virtual assistance, data entry, editing, and more. Get reliable, professional support for your business needs."
-        />
-        <meta 
-            name="keywords" 
-            content="freelance services, web development, content writing, virtual assistant, personal assistant, data entry, editing services, proofreading, photo editing, video editing, James Freelance Services, JFS, LPJFS"
-        />
         <!--
         <meta http-equiv="refresh" content="0; url=error/error.html">
         -->
@@ -39,6 +31,16 @@
         <main>
             <section>
                 <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
             </section>
             <section class="containers">
                 <div class="contents">
@@ -146,5 +148,6 @@
             </section>
         </footer>
         <script src="toggle.js"></script>
+        <script src="popup.js" defer></script>
     </body>
 </html>
