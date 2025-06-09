@@ -7,14 +7,6 @@
             name="viewport" 
             content="width=device-width, initial-scale=1.0"
         />
-        <meta 
-            name="description" 
-            content="Discover JFS Personal Assistant Services – expert support for your daily lifestyle needs. We handle appointments, errands, events, and more to help you save time and stay organized."
-        />
-        <meta 
-            name="keywords" 
-            content="Personal Assistant Services, Lifestyle Support, Appointment Scheduling, Travel Planning, Event Coordination, Errand Running, James Freelance Services"
-        />
         <!--
         <meta http-equiv="refresh" content="0; url=error/error.html">
         -->
@@ -32,6 +24,16 @@
         <main>
             <section>
                 <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
             </section>
             <section class="containers">
                 <div class="contents">
@@ -109,5 +111,6 @@
             </section>
         </footer>
         <script src="toggle.js"></script>
+        <script src="popup.js" defer></script>
     </body>
 </html>
